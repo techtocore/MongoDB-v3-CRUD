@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>
+        View records
+    </title>
+</head>
+
+<body>
+    <center>
+        <br/>
+        <h1>
+            View Student Records
+        </h1>
+        <br/>
+        <script> 
+          //  console.log(resultArray.length());
+        </script>
+        <br/>
+        <br/>
+        <tbody>
+            <% for(var i=0; i<resultArray.length; i++) {%>
+                <tr>
+                    <td>
+                        <%= resultArray[i].name %>
+                    </td>
+                    <td>
+                        <%= resultArray[i].department %>
+                    </td>
+                </tr>
+                <br/>
+                <% } %>
+        </tbody>
+    </center>
+</body>
+
+</html>
